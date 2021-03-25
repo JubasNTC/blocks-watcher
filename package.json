@@ -5,6 +5,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www",
+    "worker": "node worker.js",
     "prettier": "npx prettier --write '**/*.js'"
   },
   "dependencies": {
