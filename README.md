@@ -2,8 +2,9 @@
 
 ### About application
 
--A service that stores transaction information in Postgres in the background in all blocks starting from 9842805 (in real time, that is, the service constantly updates the database with the release of new blocks).
--API service with an endpoint that issues an address whose balance has changed more than the others (in absolute value) over the last 100 blocks.
+<p>-A service that stores transaction information in Postgres in the background in all blocks starting from 9842805 (in real time, that is, the service constantly updates the database with the release of new blocks).</p>
+
+<p>-API service with an endpoint that issues an address whose balance has changed more than the others (in absolute value) over the last 100 blocks.</p>
 
 ### Required software
 For the application to work correctly, you need to install the following software:
