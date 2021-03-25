@@ -1,12 +1,15 @@
 const createError = require('http-errors');
 const express = require('express');
 const logger = require('morgan');
+const apiRoutes = require('./routes');
 
 const app = express();
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+app.use('/api', apiRoutes);
 
 app.use((req, res, next) => {
   next(createError(404));
